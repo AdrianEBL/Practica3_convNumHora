@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.txtnum"
+        android:textSize="20dp"
+        android:id="@+id/txtnumber"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputnum"
+        android:ems="15"
+        android:id="@+id/inputNumber"
+        android:layout_below="@+id/txtnumber"
+        android:layout_alignLeft="@+id/txtnumber"
+        android:layout_alignStart="@+id/txtnumber"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.button.btncon"
+        android:id="@+id/btnConvertion"
+        android:layout_below="@+id/inputNumber"
+        android:layout_alignLeft="@+id/inputNumber"
+        android:layout_alignStart="@+id/inputNumber"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnConvertion"
+        android:layout_alignStart="@+id/btnConvertion"
+        android:layout_alignLeft="@+id/txtnumber"
+        android:layout_alignRight="@id/txtnumber"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputHour"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentLeft="@+id/btnConvertion"
+        android:layout_alignParentStart="@+id/btnConvertion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputMinut"
+        android:layout_below="@+id/inputHour"
+        android:layout_alignParentLeft="@+id/inputHour"
+        android:layout_alignParentStart="@+id/inputHour"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputSecond"
+        android:layout_below="@+id/inputMinut"
+        android:layout_alignParentLeft="@+id/inputMinut"
+        android:layout_alignParentStart="@+id/inputMinut"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputDecSecond"
+        android:layout_below="@+id/inputSecond"
+        android:layout_alignParentLeft="@+id/inputSecond"
+        android:layout_alignParentStart="@+id/inputSecond"/>
+
+</RelativeLayout>

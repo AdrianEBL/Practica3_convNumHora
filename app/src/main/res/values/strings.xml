@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Conversion de Numero a Hora</string>
+    <string name="main.hint.txtnum">Proporcione un Numero Decimal</string>
+    <string name="main.hint.inputnum">Numero Decimal</string>
+    <string name="main.button.btncon">Convertir</string>
+</resources>
